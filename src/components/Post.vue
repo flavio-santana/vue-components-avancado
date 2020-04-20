@@ -1,19 +1,47 @@
 
 <template>
 
-    <div>
-        <p>I'm the child component!</p>
+    <div class="post">
+        
+        <div class="post-cabecalho">
 
-        <slot></slot>
+            <slot name="cabecalho"></slot>
+
+        </div>
+
+        <div class="post-conteudo">
+
+            <slot name="conteudo"></slot>
+
+        </div>
+
+        <div class="post-rodape">
+
+            <slot name="rodape"></slot>
+
+        </div>
 
     </div>
 
 </template>
 
-<script>
-export default {
-    props:{
-        titulo: String
+<style scoped>
+
+    .post{
+        padding: 15px auto; 
     }
-}
-</script>
+
+    .post-cabecalho{
+        padding: 5px 12px;
+        background-color: #eee;
+    }
+
+    .post-conteudo{
+        font-size: 16px;
+    }
+
+    .post-rodape{
+        
+    }
+
+</style>
