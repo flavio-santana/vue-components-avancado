@@ -19,6 +19,10 @@
 
             <slot name="rodape"></slot>
 
+            <a href="#" class="link">
+                <slot name="botao">Ler mais...</slot>
+            </a>    
+
         </div>
 
     </div>
@@ -41,7 +45,11 @@
     }
 
     .post-rodape{
-        
+        font-style: italic;
+    }
+
+    .link{
+        float: right;
     }
 
 </style>

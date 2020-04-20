@@ -17,6 +17,10 @@
 
       <p slot="rodape">por Flávio Santana</p>
 
+      <!--
+      <p slot="botao">Detalhes...</p>
+      -->
+
     </post>  
 
   </div>
