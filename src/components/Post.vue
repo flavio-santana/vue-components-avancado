@@ -1,5 +1,13 @@
+
 <template>
-    <h2>{{titulo}}</h2>
+
+    <div>
+        <p>I'm the child component!</p>
+
+        <slot></slot>
+
+    </div>
+
 </template>
 
 <script>

@@ -3,11 +3,14 @@
     
     <h1>Vue JS</h1>
 
-    <Post titulo="Components no Vue" />
+    <post>
 
-    <Post titulo="Components no Vue 2" />
-    
-    <Post titulo="Components no Vue 3" />
+      <p>Estou injetando conteúdo de um component parente</p>
+      <p>Eu posso adicionar conteúdo também desse jeito! <strong> {{ minhaVariavel }} </strong> </p>
+
+    </post>  
+
+
 
   </div>
 </template>
@@ -21,6 +24,11 @@ export default {
 
   components: {
     Post 
+  },
+  data() {
+    return {
+      minhaVariavel: 'Conteúdo adicionado através de uma variável'
+    }
   }
   
 }
