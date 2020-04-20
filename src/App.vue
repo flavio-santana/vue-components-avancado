@@ -3,7 +3,11 @@
     
     <h1>Vue JS</h1>
 
-    <Post />
+    <Post titulo="Components no Vue" />
+
+    <Post titulo="Components no Vue 2" />
+    
+    <Post titulo="Components no Vue 3" />
 
   </div>
 </template>
