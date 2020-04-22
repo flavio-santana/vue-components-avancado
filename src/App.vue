@@ -9,13 +9,13 @@
 
       <template slot="conteudo">
 
-      <p>Components são uma das peças mais importantes no Vue</p>
+      <p class="post-paragrafo">Components são uma das peças mais importantes no Vue</p>
 
       <span>...</span>
 
       </template>
 
-      <p slot="rodape">por Flávio Santana</p>
+      <p slot="rodape">{{autor}}</p>
 
       <!--
       <p slot="botao">Detalhes...</p>
@@ -38,7 +38,7 @@ export default {
   },
   data() {
     return {
-      minhaVariavel: 'Conteúdo adicionado através de uma variável'
+      autor: 'Flávio de O. Santana'
     }
   }
   
@@ -50,6 +50,10 @@ export default {
   .container{
     width: 960px;
     margin: auto;
+  }
+
+  .post-paragrafo{
+    color:red;
   }
 
 </style>
