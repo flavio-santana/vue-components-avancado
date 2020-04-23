@@ -20,7 +20,6 @@ Vue.component('Assincrono',(resolve)=>{
 
 })
 
-
 /*
 Vue.component(
   'Assincrono',
