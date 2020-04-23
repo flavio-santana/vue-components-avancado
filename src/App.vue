@@ -7,7 +7,15 @@
     <button @click="componentSelecionado = 'PostsLista'">Posts</button>
     <button @click="componentSelecionado = 'Sobre'">Sobre</button>
 
-    <keep-alive>
+    <!--
+      Utilizando include na keep-alive, determinamos o component 
+      que deve ser armazenado no cache.
+
+      Com exclude, o comportamento é diferente. Determinamos quais components 
+      não serão mantidos no cache.
+    -->
+
+    <keep-alive :include="['Home','Sobre']">
       <component 
         :is="componentSelecionado"
         v-bind="propsAtuais">
@@ -34,7 +42,8 @@ export default {
       componentSelecionado : 'Home',
       posts: [
         {id: 1, titulo: 'Components no Vue', conteudo: 'Components são uma das peças mais importantes'},
-        {id: 2, titulo: 'Distribuindo conteúdo com Slots', conteudo: 'Slots podem ser utilizados como repositórios'}
+        {id: 2, titulo: 'Distribuindo conteúdo com Slots', conteudo: 'Slots podem ser utilizados como repositórios'},
+        {id: 3, titulo: 'Xpto', conteudo: 'bla bla bla bla'},
       ]
     }
   },
