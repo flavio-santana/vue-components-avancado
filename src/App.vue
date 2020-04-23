@@ -34,6 +34,22 @@ import Sobre       from './components/Sobre.vue'
 
 export default {
   components: {
+    Assincrono: () => ({
+      component: new Promise ((resolve,reject) => {
+
+        setTimeout(() => {
+          resolve(import('./components/Assincrono.vue')),
+          reject('Carregamento falhou!')
+        },2000)
+
+      }),
+      loading: {template: '<p>Carregando...</p>'},
+      error: {template: '<p>Error ao carregar component!</p>'},
+      delay: 200,
+      timeout: 3000,
+      
+    }),
+    
     Home,
     PostsLista,
     Sobre 
