@@ -6,6 +6,7 @@
     <button @click="componentSelecionado = 'Home'">Home</button>
     <button @click="componentSelecionado = 'PostsLista'">Posts</button>
     <button @click="componentSelecionado = 'Sobre'">Sobre</button>
+    <button @click="componentSelecionado = 'Assincrono'">Assincrono</button>
 
     <!--
       Utilizando include na keep-alive, determinamos o component 
